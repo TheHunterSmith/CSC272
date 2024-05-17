@@ -25,7 +25,7 @@ public class BankAccountGUI extends JFrame {
         yearsField = new JTextField();
         add(yearsField);
 
-        calculateButton = new JButton("Calculate");
+        calculateButton = new JButton("Calculate New Balance");
         add(calculateButton);
 
         resultLabel = new JLabel("Final Balance: ");
@@ -45,7 +45,7 @@ public class BankAccountGUI extends JFrame {
             }
         });
 
-        setSize(300, 150);
+        setSize(450, 150);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
