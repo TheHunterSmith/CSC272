@@ -91,5 +91,6 @@ public class Polynomial implements Iterable<Term> {
 
 /**
  * I started getting a little lost while doing this. I started using new ways that I haven't used before, such as the Iterator, and quite frankly
- * I have never really played with Linked lists before either. Hopefully it turned out okay.
+ * I have never really played with Linked lists before either. I did end up with the correct answer when multiplying p(x)*p(x), I will just have
+ * to review, I think I may have gotten lucky.
 **/
