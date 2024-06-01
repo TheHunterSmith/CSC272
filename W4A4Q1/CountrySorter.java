@@ -24,6 +24,7 @@ class Country {
     @Override
     public String toString() {
         return name + " - " + area + " square miles";
+
     }
 }
 
@@ -53,8 +54,8 @@ public class CountrySorter {
      
       Collections.sort(countries, Comparator.comparingDouble(Country::getArea).reversed());
 
-    
-        System.out.println("Countries after sorting:");
+        System.out.println("\n");
+        System.out.println("Countries after sorting:\n");
         for (Country country : countries) {
             System.out.println(country);
         }
