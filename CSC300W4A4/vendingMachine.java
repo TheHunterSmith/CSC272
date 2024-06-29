@@ -1,14 +1,13 @@
 package CSC300W4A4;
 
 import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Collections;
+import java.util.Scanner;
 
 class item {
     private String name;
-    private double price;
+    private int price;
 
-    public item(String name, double price){
+    public item(String name, int price){
         this.name = name;
         this.price = price;
     }
@@ -17,7 +16,7 @@ class item {
         return name;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
@@ -33,19 +32,24 @@ public class vendingMachine {
     public static void main(String[] args) {
 
         ArrayList<item> items = new ArrayList<>();
+        Scanner theirChoice = new Scanner(System.in);
 
-        System.out.println("\nSelect an Item " + "\n");
+        System.out.println("\nPlease select an Item " + "\n");
 
         items.add(new item("Snickers", 2));
-        items.add(new item("Poptarts", 1));
-        items.add(new item("Chips", 2));
+        items.add(new item("Poptarts", 3));
+        items.add(new item("Chips", 3));
         items.add(new item("Skittles", 2));
 
         for (item item : items) {
             System.out.println(item);
         }
 
-        System.out.println("\n");
+        String choice = theirChoice.nextLine();
+
+        if (choice == "Snickers"){
+            System.out.println("\nPlease insert $2 in coins or swipe credir card.\n");
+        }
 
     }
 }
