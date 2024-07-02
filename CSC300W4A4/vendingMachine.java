@@ -28,12 +28,11 @@ class item {
     }
 }
 
-
 //Main
 public class vendingMachine {
     public static void main(String[] args) {
 
-        //Creating an ARray with the item class
+        //Creating an Array with the item class
         ArrayList<item> items = new ArrayList<>();
 
         System.out.println("\nPlease select an Item " + "\n");
