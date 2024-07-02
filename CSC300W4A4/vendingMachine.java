@@ -111,7 +111,7 @@ while (true){
             System.out.println("Transaction Approved, Your Item is Dispensing, Have a Great Day!\n");
         }
         else if (choice.equals("Cancel")){
-            System.out.println("Canceling Transaction, Have a Nice Day!\n");
+            System.out.println("Canceling Transaction, Have a Great Day!\n");
             return;
         }
     }
