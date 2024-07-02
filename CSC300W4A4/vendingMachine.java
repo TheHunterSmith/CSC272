@@ -32,7 +32,6 @@ public class vendingMachine {
     public static void main(String[] args) {
 
         ArrayList<item> items = new ArrayList<>();
-        Scanner theirChoice = new Scanner(System.in);
 
         System.out.println("\nPlease select an Item " + "\n");
 
@@ -45,11 +44,17 @@ public class vendingMachine {
             System.out.println(item);
         }
 
-        String choice = theirChoice.nextLine();
+        Scanner choice = new Scanner(System.in);
+        String Snickers = "Snickers";
+        String Poptarts = "Poptarts";
+        String Chips = "Chips";
+        String Skittles = "Skittles";
 
-        if (choice == "Snickers"){
-            System.out.println("\nPlease insert $2 in coins or swipe credir card.\n");
+        if (choice.nextLine().equals(Snickers)){
+            System.out.println("\nPlease insert $2 in coins or swipe credit card.\n");
         }
+        
+        
 
     }
 }
