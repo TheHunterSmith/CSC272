@@ -102,9 +102,9 @@ while (true){
         }
         else if (choice.equals("Card")){
             System.out.println("Processing Credit Card, please wait..\n");
-            //Added a 1 second delay to Process the Credit Card
+            //Added a 2 second delay to Process the Credit Card
             try {
-                TimeUnit.SECONDS.sleep(1);
+                TimeUnit.SECONDS.sleep(2);
             } catch (InterruptedException ex) {
                 Thread.currentThread().interrupt();
             }
